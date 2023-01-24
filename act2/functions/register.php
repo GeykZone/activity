@@ -10,6 +10,7 @@ if(isset($_POST['register']))
     $username = $_POST['username'];
     $password = $_POST['password'];
     $account_id = "";
+    $conn = dbConnect();
 
 
     $first_name = ucwords($first_name);//to make evry first leeter capitalize//
