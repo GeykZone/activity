@@ -1,5 +1,7 @@
 <?php
 
+?><script> var confirmation = 0; </script><?php
+
 function connection()
 {
 
