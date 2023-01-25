@@ -1,7 +1,5 @@
 <?php
 
-?><script> var confirmation = 0; </script><?php
-
 function connection()
 {
 
@@ -21,6 +19,7 @@ function connection()
 function register()
 {
   session_start();
+  ?><script> var confirmation = 0; </script><?php
   if(isset($_POST['submit']))
   {
     $conn = connection();
@@ -57,6 +56,7 @@ function register()
 function login()
 {
     session_start();
+    ?><script> var confirmation = 0; </script><?php
     if(isset($_POST['login']))
     {
         $conn = connection();
