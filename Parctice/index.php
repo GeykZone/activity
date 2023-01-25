@@ -9,7 +9,7 @@ index()
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User</title>
+    <title><?php echo $_SESSION['fname'] ?></title>
     <script src="jQuery/main.js"></script>
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <script src="bootstrap/js/bootstrap.js" ></script>
@@ -23,7 +23,7 @@ index()
             <div class=" card-body">
 
                 <div class=" text-center mt-3 mb-3">
-                    <h1 class=" text-success">User Details</h1>
+                    <h1 class=" text-success">Welcome <?php echo $_SESSION['username'] ?></h1>
                 </div>
 
                 <form action="index.php" method="post" class="row mx-lg-5 mx-sm-0">
